@@ -54,6 +54,7 @@ class ProductController extends AdminController
         $show->field('price', __('Price'));
         $show->field('image', __('Image'));
         $show->field('category_id', __('Category id'));
+        $show->getModel()->category->name;
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
